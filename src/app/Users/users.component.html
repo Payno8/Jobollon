@@ -1,24 +1,24 @@
 <table>
     <caption>{{title}}</caption>
     <tr>
-        <th> Nome </th><br>
-        <th> Cognome </th><br>
-        <th> E-Mail </th><br>
-        <th> Codice Fiscale </th><br>
-        <th> Provincia </th><br>
-        <th> Cap </th><br>
-        <th> Indirizzo </th><br>
-        <th> Telefono </th><br>        
+        <th> Nome </th>
+        <th> Cognome </th>
+        <th> E-Mail </th>
+        <th> Codice Fiscale </th>
+        <th> Provincia </th>
+        <th> Cap </th>
+        <th> Indirizzo </th>
+        <th> Telefono </th>      
     </tr>
-    {{users | json}}
+    
         <tr *ngFor="let user of users">
-            <td>{{user | json}}</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.lastname }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.fiscalcode }}</td>
+            <td>{{ user.province }}</td>
+            <td>{{ user.postalcode }}</td>
+            <td>{{ user.address }}</td>
+            <td>{{ user.phone }}</td>
         </tr>
 </table>
