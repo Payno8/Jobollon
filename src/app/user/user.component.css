@@ -1,0 +1,15 @@
+td {
+    padding: 5px;
+    border: 1px solid;
+    background: oldlace;
+    text-align: center;
+    }
+
+button {
+    padding: 2px;
+    border: 2px solid;
+    width: 30px;
+} button.delete {
+    background: #fff;
+    color: red
+    }

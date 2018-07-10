@@ -1,1 +1,12 @@
-<h2>  user works! </h2>
+
+<td>{{ user.name }}</td>
+<td>{{ user.lastname }}</td>
+<td>{{ user.email }}</td>
+<td>{{ user.fiscalcode }}</td>
+<td>{{ user.province }}</td>
+<td>{{ user.postalcode }}</td>
+<td>{{ user.address }}</td>
+<td>{{ user.phone }}</td>
+<td>
+    <button class="delete" (click)="deleteUser(user)">X</button>
+</td>

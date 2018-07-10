@@ -1,4 +1,4 @@
-import { UserService } from './user.service';
+import { UserService } from '../services/user.service';
 import { Component, OnInit } from "@angular/core";
 
 @Component({
@@ -14,5 +14,8 @@ export class UsersComponent implements OnInit{
                }
     ngOnInit(){
         this.users = this.service.getUsers();
+    }
+    onDeleteUser(user){
+        this.service.deleteUser(user);
     }
 }
